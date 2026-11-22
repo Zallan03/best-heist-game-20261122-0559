@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Vault — a one-room gallery heist</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0b0e14;
+    color: #dfe6f5;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #e8b64c;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 720px;
+    max-width: 96vw;
+    max-height: 82vh;
+    background: #1d2331;
+    border: 1px solid #2a3247;
+    border-radius: 6px;
+    cursor: crosshair;
+  }
+  p.hint {
+    margin: 0;
+    font-size: 13px;
+    color: #8b96ad;
+  }
+</style>
+</head>
+<body>
+  <h1>MIDNIGHT VAULT</h1>
+  <canvas id="game-canvas" width="1280" height="720"></canvas>
+  <p class="hint">WASD / arrows to move &middot; click to throw a coin &middot; Q for smoke &middot; M to mute</p>
+  <script src="src/config.js"></script>
+  <script src="src/level.js"></script>
+  <script src="src/audio.js"></script>
+  <script src="src/input.js"></script>
+  <script src="src/vision.js"></script>
+  <script src="src/guards.js"></script>
+  <script src="src/cameras.js"></script>
+  <script src="src/render.js"></script>
+  <script src="src/game.js"></script>
+</body>
+</html>
